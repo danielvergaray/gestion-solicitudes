@@ -1,0 +1,86 @@
+.login-container {
+  position: relative;
+  height: 100vh;
+  background-color: aquamarine;
+  .login {
+    width: 30%;
+    margin: auto;
+    border: 1px solid #f1f5f9;
+    border-radius: 10px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: whitesmoke;
+    padding: 20px 0;
+    h1 {
+      font-size: 32px;
+    }
+    .login-formulario {
+      margin: auto;
+      width: 60%;
+      form {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        div {
+          padding: 5px 0;
+          text-align: left;
+          input {
+            //height: max-content;
+            margin: 2px auto;
+            height: 30px;
+            border-radius: 5px;
+            border: 1px solid white;
+            background-color: white;
+            width: 100%;
+            font-size: 12px;
+            text-transform: none;
+          }
+        }
+      }
+      button {
+        //background-color: #00ffff;
+        //border: 1px solid #00ffff;
+        background-color: #0d6efd;
+        border: 1px solid #0d6efd;
+        border-radius: 5px;
+        width: 100%;
+        color: white;
+        padding: 5px 0;
+      }
+      p {
+        margin: 0;
+      }
+      .recuperarPass {
+        font-size: 12px;
+        text-align: left;
+        color: #0d6efd;
+        cursor: pointer;
+        width: fit-content;
+
+        &:hover {
+          color: #0f172a;
+        }
+      }
+      .login-formulario-ocultar {
+        position: relative;
+
+        svg {
+          position: absolute;
+          top: -130%;
+          left: 98%;
+          transform: translate(-100%, -100%);
+          cursor: pointer;
+          color: gray;
+
+          &:hover {
+            color: black;
+          }
+        }
+      }
+    }
+  }
+}
