@@ -5,8 +5,10 @@ import {
   RouterProvider,
   Navigate,
 } from "react-router-dom";
+import GeneralContextProvider from "./context/GeneralContextProvider";
 import App from "./App.jsx";
 import Login from "./pages/Login.jsx";
+import Panel from "./pages/Panel.jsx";
 import "./index.scss";
 
 const router = createBrowserRouter([
@@ -26,7 +28,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/panel",
-    element: <div>Pendiente</div>,
+    element: <Panel />,
   },
   {
     path: "/gestion",
@@ -36,6 +38,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <GeneralContextProvider>
+      <RouterProvider router={router} />
+    </GeneralContextProvider>
   </StrictMode>,
 );

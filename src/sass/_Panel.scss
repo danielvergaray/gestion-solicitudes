@@ -1,0 +1,51 @@
+.panel-container {
+  padding: 20px;
+  .panel {
+    .panel-header {
+      display: grid;
+      grid-template-columns: 80% 20%;
+      h2 {
+        font-size: 20px;
+      }
+      .panel-header-opciones {
+        display: flex;
+        justify-content: end;
+
+        div {
+          margin: auto 0;
+
+          svg {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+    .panel-body {
+      .panel-body-titles,
+      .panel-body-content {
+        display: grid;
+        grid-template-columns: 2% 98%;
+
+        p {
+          width: calc(100% / 7);
+          text-align: center;
+          margin: 0;
+          padding: 10px;
+        }
+        div,
+        a,
+        i {
+          display: flex;
+          align-items: center;
+          border-bottom: gray 0.5px solid;
+          color: black;
+        }
+      }
+    }
+    .panel-footer {
+      display: grid;
+      grid-template-columns: 25% 75%;
+      padding-top: 10px;
+    }
+  }
+}
